@@ -1,0 +1,195 @@
+.company-main{
+    padding: 25px;
+    margin-top: 50px;
+    .card {
+        perspective: 150rem;
+        position: relative;
+        height: 30rem;
+        max-width: 400px;
+        margin: 2rem;
+        box-shadow: none;
+        background: none;
+      }
+      
+      .card-side {
+        height: 30rem;
+        border-radius: 15px;
+        transition: all 0.8s ease;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        padding: 2rem;
+        color: white;
+      }
+      
+      .card-side.back {
+      width: 100%;
+        border: 5px solid #fff;
+        transform: rotateY(-180deg);
+        background-color: #f18e38;
+        // background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);
+      }
+      
+      .card-side.front1 {
+        border: 5px solid #fff;
+       width: 100%;
+     
+     background-position:center center;
+     background-size: cover;
+     background-image: url("../../../public/assets/story.jpg");
+      }
+      
+      .card:hover .card-side.front1 {
+        transform: rotateY(180deg);
+      }
+      .card-side.front2 {
+        border: 5px solid #fff;
+       width: 100%;
+      
+     background-position:center center;
+     background-size: cover;
+     background-image: url("../../../public/assets/target1.jpg");
+      }
+
+      .card:hover .card-side.front3 {
+        transform: rotateY(180deg);
+      }
+      .card-side.front3 {
+        border: 5px solid #fff;
+       width: 100%;
+      
+     background-position:center center;
+     background-size: cover;
+     background-image: url("../../../public/assets/sucess.jpg");
+      }
+      
+      .card:hover .card-side.front2 {
+        transform: rotateY(180deg);
+      }
+      
+      .card:hover .card-side.back {
+        transform: rotateY(0deg);
+      }
+      img{
+        width: 100%;
+      }
+      .back-text{
+        h3{
+            color: #000;
+        }
+        p{
+            color: #000;
+            margin-top: 50px;
+            font-size: 17px;
+            font-weight: 500;
+        }
+      }
+
+      .ui-main{
+        background: #f18e38;
+    border-radius: 40px;
+    padding: 0 26px;
+    .upper-case{
+        margin-top: 25px;
+    }
+        img{
+            background-color: #000;
+    border-radius: 20px;
+    width: 100%;
+    animation: myown 2s ease-in-out infinite alternate-reverse both;
+        }
+        @-webkit-keyframes myown {
+            0% {
+              transform: translateY(10px);
+            }
+          
+            100% {
+              transform: translateY(-10px);
+            }
+          }
+          
+          @keyframes myown {
+            0% {
+              transform: translateY(10px);
+            }
+          
+            100% {
+              transform: translateY(-10px);
+            }
+          }
+
+         
+      }
+      .strip-main{
+        background-color: #f18e38;
+padding: 0 5px;
+margin: 20px 20px;
+border-radius: 5px;
+
+      }
+      .strip-sub{
+        width: 100%;
+        color: #fff;
+        background-color: #000;
+        border-radius: 10px;
+
+padding: 20px 5px;
+box-shadow: 0px 10px 15px -5px var(--grayishBlue);
+      }
+
+      p{
+        color: #fff;
+      }
+
+      .counter-main{
+        width: 100%;
+        border-radius: 20px;
+    box-shadow: 0px 10px 15px -5px var(--grayishBlue);
+    background-color: #f18e38;
+    height: 312px;
+    margin-top: 40px;
+    padding: 0 10px;
+      }
+
+      .counter-sub{
+      width: 100%;
+    height: 100%;
+    box-shadow: 0px 10px 15px -5px var(--grayishBlue);
+    background-color: #f1f2f6;
+    border-radius: 20px;
+    background-image: url(../../../public/assets/backbgg.jpg);
+    background-size:cover;
+    background-repeat: round;
+      }
+     .count-text{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+     font-weight: 700;
+     }
+.col-class{
+  color: #fff;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.row-class{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.count-p{
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+}
+}
+
+
+  
+  

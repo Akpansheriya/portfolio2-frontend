@@ -1,0 +1,59 @@
+
+.mobileService-main{
+padding: 25px;
+margin-top: 50px;
+  .cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 90%;
+    border-radius: 10px;
+    color: #000;
+    background-color: #f18e38;
+    border: 3px solid #000;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: 1em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+
+  
+}
+
+.sub-text{
+  height: 100%;
+  margin-top: 20px;
+  font-size: 22px !important;
+  color: #fff;
+  // background: -webkit-linear-gradient(#eee, #333);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+}
