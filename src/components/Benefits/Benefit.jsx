@@ -26,7 +26,7 @@ function Benefit() {
        {benefits ? benefits.map((ele) => (
         <>
         <Col sm={12} lg={4} md={4} className="mt-5">
-        <div className="wrapper"  data-aos="fade-up" data-aos-delay={ele.aos}>
+        <div key={ele.title} className="wrapper"  data-aos="fade-up" data-aos-delay={ele.aos}>
       <div class="card">
         <div class="card-img">
             <img src={ele.image} alt="vac" />

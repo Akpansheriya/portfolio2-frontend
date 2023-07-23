@@ -20,7 +20,7 @@ function Service() {
     <Row cols="auto" className='mt-3 '>
      { services ? services.map((ele) => (<>
         <Col sm={12} lg={4} md={4} className="d-flex mb-5 ">
-            <div className='cardbox-main' data-aos="fade-up" data-aos-delay={ele.aos}>
+            <div key={ele.title} className='cardbox-main' data-aos="fade-up" data-aos-delay={ele.aos}>
         <div class="cardBox">
   <div class="card">
      <div class="h4">

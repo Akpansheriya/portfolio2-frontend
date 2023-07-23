@@ -1,0 +1,50 @@
+.mainView {
+    background-image: url(../../../public/assets/back003.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 25px;
+
+    #main{
+       margin-top: 220px;
+       margin-bottom: 150px;
+    }
+    .link-main{
+        width: 100%;
+        text-align: start;
+    }
+    a{
+        color: #000 !important;
+        background: #f18e38;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+
+    }
+
+    a:hover{
+        background: #fff;
+        transition: ease 0.4s;
+    }
+    img{
+        width: 100%;
+    }
+    .row-class{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   .port-img{
+    width: 80%;
+   }
+   .description {
+    margin-top: 30px;
+    p{
+    text-align: start;
+        font-size: 22px;
+        color: #fff;
+
+    }
+}
+}

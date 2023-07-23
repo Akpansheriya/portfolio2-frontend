@@ -29,8 +29,8 @@ function Navbars() {
           <Nav className="ml-auto">
           <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-            <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link smooth href="#hero">Home</Nav.Link>
+            <Nav.Link smooth href="#About">About</Nav.Link>
             <Nav.Link href="#Services">Services</Nav.Link>
             <Nav.Link href="#Career">Career</Nav.Link>
             <Nav.Link href="#Portfolio">Portfolio</Nav.Link>

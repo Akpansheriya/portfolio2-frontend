@@ -13,7 +13,7 @@ function Footer() {
       <div className="site-section">
         <div className="container">
 
-          <div className="cta d-block d-md-flex align-items-center px-5" data-aos="zoom-in"  data-aos-duration="2000">
+          <div className="cta d-block d-md-flex align-items-center px-5" data-aos="zoom-in"  data-aos-duration="1000">
             <div>
               <h2 className="mb-0">Join With Us</h2>
               <h3 className="text-dark">Grow your business</h3>
@@ -49,15 +49,15 @@ function Footer() {
             <div className="col-sm">
               <h3  >Further Information</h3>
               <ul className="list-unstyled links">
-                <li ><a href="/">Terms &amp; Conditions</a></li>
-                <li  ><a href="/">Privacy Policy</a></li>
+                <li ><a href="/Term-Conditions">Terms &amp; Conditions</a></li>
+                <li  ><a href="/Privacy-Policy">Privacy Policy</a></li>
               </ul>
             </div>
             <div className="col-md-3">
               <h3>Follow us</h3>
               <ul className="list-unstyled social">
-                <li ><a href="/"><i className="fa-brands fa-facebook"></i></a></li>
-                <li><a href="/"><i class="fa-brands fa-twitter"></i></a></li>
+                <li ><a href="https://www.facebook.com/profile.php?id=100094538292148&is_tour_dismissed=true"><i className="fa-brands fa-facebook"></i></a></li>
+              
                 <li ><a href="https://www.linkedin.com/company/blackbull-technologies/"><i class="fa-brands fa-linkedin"></i></a></li>
                 <li><a href="https://instagram.com/blackbull.technology?igshid=OGIzYTJhMTRmYQ=="><i class="fa-brands fa-instagram"></i></a></li>
               

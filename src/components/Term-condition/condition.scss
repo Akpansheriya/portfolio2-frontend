@@ -1,0 +1,44 @@
+.condition-main{
+    background: #fff;
+    padding: 25px;
+   
+    .text-2{
+        text-align: start;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    li{
+        text-align: start;
+    }
+    
+  header{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    h1{
+        color: #fff !important;
+    }
+  }
+    section {
+        margin-bottom: 20px;
+    }
+    
+    h1,
+    h2 {
+        color: #333;
+       
+    }
+    
+    p,
+    ul {
+        color: #555;
+        text-align: start;
+    }
+    
+    ul {
+        list-style: disc;
+        margin-left: 20px;
+    }
+    
+}

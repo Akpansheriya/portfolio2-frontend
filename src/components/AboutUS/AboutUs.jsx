@@ -5,16 +5,16 @@ import { Helmet } from 'react-helmet'
 
 function AboutUs() {
   return (
-    <div className='mt-5' id="About">
+    <div className='mt-5' >
        <Helmet>
         <title>BlackBull Technologies</title>
         <meta name="description" content="Welcome To Blackbull technologies,Your Number One Source For All Things. We're Dedicated To Giving You The Best Of Work, With A Focus On Three Characteristics, Ie: Dependability,Customer Services And Uniquenessl." />
         <meta name="keywords" content="blackbull, blackbuck, black, technologies, blackbull technologies, welcome blackbull, technosoft, infotech, blackbull technosoft, blackbull infotech,about,aboutus,about us, blackbull about" />
         </Helmet>
          <div className="header-main" data-aos="zoom-in" data-aos-delay="1000">
-         <Row >
+         <Row id="About" >
         
-        <h1 className="main-heading">About Us</h1>
+        <h1 className="main-heading" >About Us</h1>
         <h2 className="sub-heading"> grow your business with us </h2>
     
     </Row>

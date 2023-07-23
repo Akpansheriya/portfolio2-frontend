@@ -84,7 +84,7 @@ theme: "light",
                 <i class="fa-solid fa-location-dot"></i>
                 <h3>Our Address</h3>
                 <p>
-                  228,Ambika pinnacle,mota varchha,near lajamani,Surat,Gujarat
+                  228, Ambika pinnacle, mota varchha, near lajamani, Surat, Gujarat
                 </p>
               </div>
             </div>

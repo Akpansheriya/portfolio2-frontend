@@ -104,9 +104,10 @@ function Startup() {
         {items
           ? items.map((v) => (
               <div
+              key={v.title}
                 className="itemss"
                 data-aos="zoom-in"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
               >
               <img src={v.image} alt="hu"/>
               <h2>{v.title}</h2>
