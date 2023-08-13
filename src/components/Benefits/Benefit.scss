@@ -55,11 +55,11 @@
   
    
    .text-body {
-   
+    font-family: "Roboto";
     text-align: center;
     color: #fff !important;
     font-weight: 400;
-    font-style: italic;
+    
    }
    
    /*Hover*/
@@ -75,6 +75,7 @@
     align-items: center;
    }
    .card-title{
+    font-family: "Roboto";
     color: #fff;
     font-size: 17px;
    }

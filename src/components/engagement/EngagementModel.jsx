@@ -5,15 +5,15 @@ import { engageData } from "./engageData";
 import { Helmet } from "react-helmet";
 function EngagementModel() {
   return (
-    <div className=" engage-main mt-5 ">
+    <div className=" engage-main mt-5 " id="EngagementModel">
        <Helmet>
-        <title>BlackBull Technologies</title>
-        <meta name="description" content="Our team comprises of some of the best professionals in the industry. You might only need to add a few people to your existing team or need a whole team. We have got you covered in both the cases!" />
-        <meta name="keywords" content="blackbull, blackbuck, black, technologies, blackbull technologies, welcome blackbull, technosoft, infotech, blackbull technosoft, blackbull infotech,engagement,model,client,contact,clients,client of blackbull,how to find client" />
+        <title>we are providing a best strategic ideas and team services for development - Blackbull Technologies</title>
+        <meta name="description" content="Discover the power of growth with Blackbull Technologies! We offer top-notch strategic ideas and professional team services for seamless development. Unlock your business's potential with our tailored solutions, designed to elevate your success. Experience excellence in technology and innovation with Blackbull Technologies, your trusted partner for success , we are providing services like - Extend Your Team ,Build Your Idea From Scratch,Manage Team Service" />
+        <meta name="keywords" content="best strategic ideas,team services,services for development,Extend Your Team ,Build Your Idea From Scratch,Manage Team Service" />
         </Helmet>
       <Row>
         <h1 className="main-heading">Our Engagement Model</h1>
-        <h2 className="sub-heading"> grow your business with us </h2>
+        <h2 className="sub-heading">we are providing a best strategic ideas ,teams ,instructions and methods for build your products </h2>
       </Row>
 
       <Row>
@@ -22,10 +22,11 @@ function EngagementModel() {
               <>
                 <Col sm={12} md={4} lg={4}>
                   <div key={ele.title} className="book-main" data-aos="fade-up" data-aos-delay={ele.aos}>
-                    <div class="book">
+                    <div className="book">
                       <p>{ele.description}</p>
-                      <div class="cover">
+                      <div className="cover">
                         <img
+                         referrerpolicy="no-referrer"
                           className="img-width"
                           src={ele.image}
                           alt="engage"

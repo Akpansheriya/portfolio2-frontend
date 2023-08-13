@@ -1,6 +1,7 @@
 
 
 .header-main {
+    font-family: "Roboto";
 margin-top: 50px;
 padding:100px 25px;
 background: #000;
@@ -9,6 +10,7 @@ border-right:5px solid #f18e38;
 border-top-left-radius: 80px;
 border-bottom-right-radius: 80px;
 margin:0 10px;
+
 
 .row-main {
     display: flex;
@@ -19,20 +21,24 @@ padding: 25px;
 margin-top: 20px;
 
     h1 {
+        font-family: "Roboto";
         color: #fff;
         text-align: start;
     }
     p{
+        font-family: "Roboto";
         font-size: 17px;
         margin-top: 25px;
         color: #fff;
         text-align: start;
     }
     .bold-style{
+        font-family: "Roboto";
         font-weight: 700;
         color: #f18e38;
     }
     h2{
+        font-family: "Roboto";
         margin-top: 20px;
         color: #fff;
         text-align: start;

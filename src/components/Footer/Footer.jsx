@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Footer.scss"
 import { Helmet } from 'react-helmet'
+import { Col, Row } from 'react-bootstrap'
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div>
@@ -26,7 +28,7 @@ function Footer() {
 
             <div className="col-sm">
               <div className='footer-main'>
-              <img className='footer-logo-img'   src='../assets/blackbulllogo.png' alt='footer-img' />
+              <img  referrerpolicy="no-referrer" className='footer-logo-img'   src='../assets/blackbulllogo.png' alt='footer-img' />
               
               </div>
              
@@ -38,19 +40,33 @@ function Footer() {
             <div className="col-sm">
               <h3  >Company</h3>
               <ul className="list-unstyled links">
-                <li   ><a href="#hero">Home</a></li>
+                <Row>
+                  <Col>
+                  <li   ><a href="#hero">Home</a></li>
                 <li ><a href="#About">About us</a></li>
                 <li ><a href="#Services">Service</a></li>
                 <li ><a href="#Career">Career</a></li>
                 <li ><a href="#Portfolio">Portfolio</a></li>
                 <li  ><a href="#ContactUs">Contact us</a></li>
+                  </Col>
+                  <Col>
+                 
+                <li  ><a  href="#StartUp">Start-Up</a></li>
+                <li  ><a href="#Testimonials">Testimonials</a></li>
+                <li  ><a href="#EngagementModel">Engagement Model</a></li>
+                <li  ><a href="#Career">Career</a></li>
+                <li  ><a href="#Company">Company</a></li>
+                  </Col>
+                </Row>
+               
+               
               </ul>
             </div>
             <div className="col-sm">
               <h3  >Further Information</h3>
               <ul className="list-unstyled links">
-                <li ><a href="/Term-Conditions">Terms &amp; Conditions</a></li>
-                <li  ><a href="/Privacy-Policy">Privacy Policy</a></li>
+                <li ><Link to="/TermConditions">Terms &amp; Conditions</Link></li>
+                <li  ><Link to="/PrivacyPolicy">Privacy Policy</Link></li>
               </ul>
             </div>
             <div className="col-md-3">
@@ -58,8 +74,8 @@ function Footer() {
               <ul className="list-unstyled social">
                 <li ><a href="https://www.facebook.com/profile.php?id=100094538292148&is_tour_dismissed=true"><i className="fa-brands fa-facebook"></i></a></li>
               
-                <li ><a href="https://www.linkedin.com/company/blackbull-technologies/"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://instagram.com/blackbull.technology?igshid=OGIzYTJhMTRmYQ=="><i class="fa-brands fa-instagram"></i></a></li>
+                <li ><a href="https://www.linkedin.com/company/blackbull-technologies/"><i className="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://instagram.com/blackbull.technology?igshid=OGIzYTJhMTRmYQ=="><i className="fa-brands fa-instagram"></i></a></li>
               
               </ul>
             </div>

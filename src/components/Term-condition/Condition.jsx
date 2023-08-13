@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./condition.scss"
 
 function Condition() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+    
   return (
     <>
     <div className='condition-main'>
  <header>
-        <h1>BlackBull Technologies</h1>
+       
         <h1>Term And Conditions</h1>
        
     </header>

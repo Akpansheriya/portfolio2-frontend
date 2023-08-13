@@ -1,27 +1,52 @@
 [
     {
-      "testimonial": "The Lorem Ipsum Company has been an integral part of our content marketing success. We have seen a notable increase in organic leads since we began using their services in 2012.",
+      "testimonial": "The Blackbull Technologies has been an integral part of our content marketing success. We have seen a notable increase in organic leads since we began using their services in 2018.this company is best it solution company ever i have seen in my career",
       "author": "~ John",
-      "photo" : "../assets/1.jpg"
+      "photo" : "../assets/1.jpg",
+      "class1":"checked",
+      "class2":"checked",
+      "class3":"checked",
+      "class4":"checked",
+      "class5":"checked"
     },
     {
-      "testimonial": "My busy schedule leaves little, if any, time for blogging and social media. The Lorem Ipsum Company has been a huge part of helping me grow my business through organic search and content marketing",
+      "testimonial": "blackbull tecnologies is one of best it solution company in surat ,My busy schedule leaves little, if any, time for blogging and social media. The Blackbull Technologies has been a huge part of helping me grow my business through organic search and content marketing",
       "author": "~ Nobita",
-      "photo" : "../assets/2.jpg"
+      "photo" : "../assets/2.jpg",
+      "class1":"checked",
+      "class2":"checked",
+      "class3":"checked",
+      "class4":"checked"
+      
     },
     {
-      "testimonial": "I was skeptical of SEO and content marketing at first, but the Lorem Ipsum Company not only proved itself financially speaking,That's how I would describe Jeramy and his team at The Shree Keshav Mill",
+      "testimonial": "I was skeptical of SEO and content marketing at first, but the Blackbull Technologies not only proved itself financially speaking,That's how I would describe Jeramy and his team at The Shree Keshav Mill",
       "author": "~ Rgb boy",
-      "photo" : "../assets/3.jpg"
+      "photo" : "../assets/3.jpg",
+      "class1":"checked",
+      "class2":"checked",
+      "class3":"checked",
+      "class4":"checked",
+      "class5":"checked"
     },
     {
       "testimonial": "our customers had a hard time finding us and our sales plummeted.  not only revitalized our brand, but saved our nearly 100-year-old family business from the brink of ruin by optimizing our website for search and creating our Google My Business listing.",
       "author": "~ Kamesh",
-      "photo" : "../assets/4.jpg"
+      "photo" : "../assets/4.jpg",
+      "class1":"checked",
+      "class2":"checked",
+      "class3":"checked",
+      "class4":"checked"
+      
     },
     {
       "testimonial": "Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That's how I would describe Jeramy and his team at The Shree Keshav Mill",
       "author": "~ Weekend",
-      "photo" : "../assets/5.jpg"
+      "photo" : "../assets/5.jpg",
+      "class1":"checked",
+      "class2":"checked",
+      "class3":"checked",
+      "class4":"checked",
+      "class5":"checked"
     }
   ]

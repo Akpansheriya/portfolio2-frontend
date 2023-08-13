@@ -5,8 +5,44 @@
     background-position: center;
     padding: 25px;
 
+    @media only screen and (max-width: 480px) {
+        .img-class{
+            width: 100%;
+        }
+        .img-class2{
+            width: 80%;
+        }
+      }
+
+    @media screen and (min-width: 481px) and (max-width: 1024px) {
+        .img-class{
+            width: 80%;
+        }
+        .img-class2{
+            width: 60%;
+        }
+      }
+
+      @media screen and (min-width: 1025px) and (max-width: 1920px) {
+        .img-class{
+            width: 80%;
+        }
+        .img-class2{
+            width: 70%;
+        }
+      }
+   
+      @media screen and (min-width: 1921px) {
+        .img-class{
+            width: 80%;
+        }
+        .img-class2{
+            width: 60%;
+        }
+      }
+
     #main{
-       margin-top: 220px;
+       margin-top: 100px;
        margin-bottom: 150px;
     }
     .link-main{
@@ -14,6 +50,7 @@
         text-align: start;
     }
     a{
+        font-family: "Roboto";
         color: #000 !important;
         background: #f18e38;
     padding: 12px 20px;
@@ -27,24 +64,70 @@
         background: #fff;
         transition: ease 0.4s;
     }
-    img{
-        width: 100%;
-    }
+    
+    
+   
+
     .row-class{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items:center;
     }
-   .port-img{
-    width: 80%;
-   }
+   
+
+   
    .description {
     margin-top: 30px;
+    padding: 0 40px;
     p{
+        font-family: "Roboto";
     text-align: start;
         font-size: 22px;
         color: #fff;
+        margin-top: 50px;
 
     }
 }
+
+@media only screen and (max-width: 480px) {
+    .port-img{
+        width: 55%;
+       }
+  }
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .port-img{
+        width: 55%;
+       }
+  }
+
+  @media screen and (min-width: 1025px) and (max-width:1250px) {
+    .port-img{
+        width: 60%;
+       }
+  }
+  @media screen and (min-width: 1251px) and (max-width:1350px) {
+    .port-img{
+        width: 60%;
+       }
+  }
+  @media screen and (min-width: 1351px) and (max-width:1450px) {
+    .port-img{
+        width: 42%;
+       }
+  }
+  @media screen and (min-width: 1451px) and (max-width:1920px) {
+    .port-img{
+        width: 40%;
+       }
+  }
+  @media screen and (min-width: 1921px) {
+    .port-img{
+        width: 40%;
+       }
+  }
+
+  .web-image{
+    width: 100%;
+  }
 }

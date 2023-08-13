@@ -24,7 +24,7 @@
         "image1":"../assets/zazu1.png",
         "image4":"../assets/zazu2.png",
         "image3":"../assets/zazu3.png",
-        "image5":"../assets/zazu4.png",
+      
         "image2":"../assets/zazu5.png",
    
         "title": "Easy Fasting",
@@ -32,12 +32,12 @@
         "description1":"Introducing EasyFasting: Your Ultimate Fasting Recipe Companion!Are you on a fasting journey and looking for a convenient way to explore a variety of delicious and nutritious fasting recipes? Look no further! EasyFasting is here to support you in your fasting goals, providing a wide range of fasting recipes that are both satisfying and beneficial for your body. ",
         "data3":"In the favorite screen, users can conveniently select and save their preferred options for future use. Whether it's a favorite destination, a frequently used service, or a preferred vehicle type, users can easily mark and store their choices. This feature streamlines the booking process, allowing users to access their favorites with just a few taps. By saving their preferences, users can quickly initiate bookings without the need to re-enter details repeatedly. The favorite screen enhances user satisfaction by providing a personalized and time-saving experience, making it effortless for users to access their preferred options and enjoy a seamless ride-hailing journey.",
         "data2":"This screen is designed to display recipe data, complete with detailed instructions and ingredients. Users can explore a wide range of delectable recipes, each presented with clear and easy-to-follow steps. Moreover, users have the opportunity to rate and provide feedback on each recipe, sharing their culinary experiences with others. The interactive rating feature allows users to express their preferences, contributing to a vibrant community of food enthusiasts. By combining informative recipe content with user ratings, this screen offers a delightful culinary experience, fostering a sense of community and encouraging users to try and savor a variety of delicious dishes.",
-        "data4":"Emopin is an Always-on solution that allows businesses to get Anonymous feedback on Products, Services, Policies, Events, and People and real-time insights help decision-makers to redefine strategies and adjust faster.",
+      
         "data1":"In this screen, users can explore an extensive collection of recipes organized into various categories. With a user-friendly interface, users can easily navigate and select recipes based on their preferences, such as cuisine type, dietary preferences, or meal courses. The screen also highlights trending recipes, showcasing popular and sought-after dishes among the community. This feature enables users to discover exciting and in-demand culinary creations. Whether seeking new cooking ideas, looking for specific dietary options, or exploring the latest food trends, the screen offers a diverse and engaging culinary experience, catering to users' unique tastes and interests.",
         "title1":"Home Screen",
-        "title2":"Test Category Screen",
-        "title3":"Test Results Screen",
-        "title4":"Test Screen"
+        "title2":"Category Screen",
+        "title3":"Favourites Screen"
+      
 
     },
     {
@@ -47,7 +47,7 @@
       "image4":"../assets/choira3.png",
       "image5":"../assets/choira4.png",
       "image2":"../assets/choira5.png",
-      "title": "Choiro Studio",
+      "title": "Choira Studio",
       "description1":"A Digital Music Ecosystem for Musicians to Book, Create & Play. Choose from a wide range of verified & affordable music studios around you to record your next hit! numerous music studios listed on the Choira app which can be sorted per location, pricing & rating. After choosing the desired studio, you can check the equipment i.e mics, audio interface, mixer, DAWs, instruments etc. & various amenities which are available at the studio.",
       "description2":"Welcome to Choira! A Digital Music Ecosystem for Musicians to Book, Create & Play. Choose from a wide range of verified & affordable music studios around you to record your next hit! numerous music studios listed on the Choira app which can be sorted per location, pricing & rating. After choosing the desired studio, you can check the equipment i.e mics, audio interface, mixer, DAWs, instruments etc. & various amenities which are available at the studio. You can book the studio by choosing the available slots and making the payment through your preferred payment method. After booking confirmation, you can visit the studio and enjoy an amazing recording session! If you want to cancel the recording due to any issues, don’t worry! Just head to your booking section and get an option to cancel your booking. The refunds will be processed as per the cancellation policy.",
       "data1":"In this screen, users are presented with an interactive and user-friendly display showcasing all available studios, complete with navigation and pricing details. Users can effortlessly browse through a diverse range of studios, each marked on a map for easy navigation. The screen provides clear and concise pricing information for each studio, allowing users to compare rates and make informed decisions based on their budget and preferences. With the inclusion of a seamless navigation feature, users can access studio locations conveniently, making it simple to find and explore their desired spaces while also knowing the associated prices, facilitating a smooth and efficient studio selection process.",

@@ -5,6 +5,11 @@ import { Row } from "react-bootstrap";
 import Model from "../Modal/Model";
 import { Helmet } from "react-helmet";
 function Startup() {
+
+
+ 
+
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -31,7 +36,7 @@ function Startup() {
     {
       "image":"../assets/react.png",
       "title":"React Js",
-      "exp":"1-2 years",
+      "exp":"4-5 years",
 
     },
     {
@@ -49,19 +54,19 @@ function Startup() {
     {
         "image":"../assets/laravel.svg",
         "title":"Laravel",
-        "exp":"1-2 years",
+        "exp":"2-3 years",
         
       },
       {
         "image":"../assets/node.png",
         "title":"Node Js",
-        "exp":"1-2 years",
+        "exp":"3-4 years",
         
       },
       {
         "image":"../assets/android1.png",
         "title":"Android",
-        "exp":"1-2 years",
+        "exp":"3-4 years",
         
       }
   ]
@@ -70,16 +75,16 @@ function Startup() {
   let resetTimeout;
 
   return (
-    <div className="startup-main">
+    <div className="startup-main" >
        <Helmet>
-        <title>BlackBull Technologies</title>
-        <meta name="description" content=" we are working in various technologies like flutter,node,react,react-native,laravel,wordpress,php,
+        <title>which company providing a various technologies option? - Blackbull Technologies</title>
+        <meta name="description" content=" we are working in various technologies like flutter,node,react,react-native,laravel,wordpress,php
         " />
-        <meta name="keywords" content="blackbull, blackbuck, black, technologies, blackbull technologies, welcome blackbull, technosoft, infotech, blackbull technosoft, blackbull infotech,services,server,service,apps,webs,app development,web development" />
+        <meta name="keywords" content="various technologies, technologies option, flutter, node, react, react-native,laravel,wordpress,php" />
         </Helmet>
       <Row>
-        <h1 className="main-heading">Current Openings</h1>
-        <h2 className="sub-heading"> grow your business with us </h2>
+        <h1 className="main-heading" id="StartUp">Current Openings</h1>
+        <h2 className="sub-heading">we are providing a various technologies options to beginners </h2>
       </Row>
 
       <Carousel
@@ -109,7 +114,7 @@ function Startup() {
                 data-aos="zoom-in"
                 data-aos-duration="1000"
               >
-              <img src={v.image} alt="hu"/>
+              <img  referrerpolicy="no-referrer" src={v.image} alt={v.title}/>
               <h2>{v.title}</h2>
               <p>{v.exp}</p>
               <button type="button" className="join-btn" onClick={handleShow}>join</button>

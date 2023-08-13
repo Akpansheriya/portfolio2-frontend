@@ -28,8 +28,7 @@ function Model({ show, handleClose }) {
     setLoading(true)
     let formData = new FormData();
 
-    console.log("file ", file);
-    console.log("e.target.file.files[0] ", e.target.file.files[0]);
+ 
     formData.append("resume", e.target.file.files[0]);
     formData.append("firstName", file.firstName);
     formData.append("lastName", file.lastName);
@@ -41,7 +40,7 @@ function Model({ show, handleClose }) {
     formData.append("experienceMonth", e.target.experienceMonth.value);
     formData.append("education", file.education);
     formData.append("detail", file.detail);
-    console.log(formData);
+   
     axios
       .post("https://portfolio2-02cw.onrender.com/upload", formData)
       .then((res) => {

@@ -1,0 +1,29 @@
+.skeleton-main{
+    .inner-body{
+        background-image: linear-gradient(to right, #ff512f, #f09819);
+    width: 420px;
+    height: 600px;
+    border-radius: 30px;
+    border: 4px solid #fff;
+    animation: blink 3s infinite;
+    filter: brightness(0.4) blur(2px);
+   
+    }
+  
+    @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          color: blue;
+        }
+      }
+    .outer-body{
+        width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}

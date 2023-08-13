@@ -62,15 +62,15 @@ function CompanyPage() {
   return (
     <div className="mt-5">
        <Helmet>
-        <title>BlackBull Technologies</title>
-        <meta name="description" content="this section show our clients, projects,goals,story,success,history,features etc.. " />
-        <meta name="keywords" content="blackbull, blackbuck, black, technologies, blackbull technologies, welcome blackbull, technosoft, infotech, blackbull technosoft, blackbull infotech,benefit,story,goal,section,history,mission,ui ,responsive" />
+        <title>best strategic and successfull it company in surat </title>
+        <meta name="description" content="we are providing a best strategic ideas to our clients for make their businesses successfull,our projects,goals,story,success,history,features are given below, we are the best strategic and it company in surat " />
+        <meta name="keywords" content="best strategic company in surat,successfull it company in surat,best strategic and successfull it company in surat,it company in surat" />
         </Helmet>
-      <div className="company-main">
+      <div className="company-main" id='Company'>
         <Row >
         
-            <h1 className="main-heading"> Welcome To Blackbull Technologies</h1>
-            <h2 className="sub-heading"> grow your business with us </h2>
+            <h1 className="main-heading"> Welcome To Our mission,story and goals </h1>
+            <h2 className="sub-heading"> we are one of the best strategic and successfull it solution company </h2>
         
         </Row>
        
@@ -99,10 +99,10 @@ function CompanyPage() {
           </Row>
         
         <div className="card-strip-main mt-5">
-            <Row >
+            <Row className='stripe-main-sec' >
                 <Col xs={12} md={6} lg={6}>
                     <div className="ui-main" data-aos="fade-up" data-aos-delay="100">
-                       <img src="../assets/marketing.png" alt="ui-section" />
+                       <img  referrerpolicy="no-referrer" src="../assets/marketing.png" alt="ui-section" />
                     </div>
                 </Col>
                 <Col xs={12} md={6} lg={6}>

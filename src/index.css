@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 
 
 * {
@@ -24,6 +25,8 @@ code {
 }
 
 .main-heading{
+  margin-top: 100px !important;
+  font-family: "Roboto";
   font-size: 3rem;
     letter-spacing: 1px;
     font-weight: bold;
@@ -33,6 +36,7 @@ code {
 }
 
 .sub-heading{
+  font-family: "Roboto";
   font-size: 2rem;
     font-family: "poppins";
     font-weight: 300;

@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://portfolio2-02cw.onrender.com",
+  "homepage": "https://www.blackbulltechnologies.in/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -12,6 +12,7 @@
     "bootstrap": "^5.3.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
+    "react-cookie": "^4.1.1",
     "react-dom": "^18.2.0",
     "react-elastic-carousel": "^0.11.5",
     "react-helmet": "^6.1.0",

@@ -27,7 +27,7 @@ export const services = [
         "aos":"500",
         "image":"../assets/service5.png",
         "title":"IT Solutions",
-        "description":"A software solution is typically custom-built or configured to solve a specific customer problem. It could include: Custom Software Development. Customized Assembly of multiple software products. Custom Implementation of existing software platforms or products."
+        "description":"A software solution is typically custom-built or configured to solve a specific customer problem. It could include: Custom Software Development. Customized Assembly of multiple software products. Custom Implementation of existing software platforms or products.we are providing a best it solutions for our clients and customers 24 X 7"
     },
     {
         "aos":"600",

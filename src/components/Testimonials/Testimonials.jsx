@@ -64,11 +64,11 @@ const TESTIMONIAL_DELAY = 3000;
         .classList.add(styles["myDot--active"]);
     };
   return (
-    <div  className={styles.test_main}>
+    <div  className={styles.test_main} id='Testimonials'>
        <Helmet>
-        <title>BlackBull Technologies</title>
-        <meta name="description" content="this is our testimonial section which is show a reviews about us" />
-        <meta name="keywords" content="blackbull, blackbuck, black, technologies, blackbull technologies, welcome blackbull, technosoft, infotech, blackbull technosoft, blackbull infotech,services,server,service,apps,webs,app development,web development" />
+        <title>we are the best it solution company with happy clients - Blackbull Technologies</title>
+        <meta name="description" content="we are providing a best it solutions and ideas to cients for make their business successfull and grow their businesses,we have 50+ clients in last 3 years" />
+        <meta name="keywords" content="happy clients,company with happy clients,best it solution company,best it solution company in surat, best it company in surat" />
         </Helmet>
          <Row>
         <h1 className="main-heading">Our Testimonials</h1>
@@ -90,9 +90,15 @@ const TESTIMONIAL_DELAY = 3000;
                 key={i}
                 className={`feedbackText--${i} ${styles["main-quotes-div"]} ${styles["not-visible"]}`}
               >
-                <img className={styles.img_main} src={el.photo} alt={el.author}/>
+                <img  referrerpolicy="no-referrer" className={styles.img_main} src={el.photo} alt={el.author}/>
                 <div className={styles.para}>{el.testimonial}</div>
                 <div className={styles.subText}>{el.author}</div>
+                <h5 className={styles.rating}>Rating</h5>
+<span className={el.class1 ? `${styles.checked} fa fa-star ${styles.fa_star} ` : `fa fa-star ${styles.fa_star} `}></span>
+<span className={el.class2 ? `${styles.checked} fa fa-star ${styles.fa_star} ` : `fa fa-star ${styles.fa_star} `} ></span>
+<span className={el.class3 ? `${styles.checked} fa fa-star ${styles.fa_star} ` : `fa fa-star ${styles.fa_star} `}></span>
+<span className={el.class4 ? `${styles.checked} fa fa-star ${styles.fa_star} ` : `fa fa-star ${styles.fa_star} `}></span>
+<span className={el.class5 ? `${styles.checked} fa fa-star ${styles.fa_star} ` : `fa fa-star ${styles.fa_star} `}></span>
                 <div className={styles.dots3} ref={refButtonsParentDiv}>
                {testimonialData.map((_, i, arr) => {
                  return (

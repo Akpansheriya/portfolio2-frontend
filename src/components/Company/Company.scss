@@ -1,6 +1,8 @@
 .company-main{
     padding: 25px;
     margin-top: 50px;
+    font-family: "Roboto";
+    
     .card {
         perspective: 150rem;
         position: relative;
@@ -39,6 +41,7 @@
      background-position:center center;
      background-size: cover;
      background-image: url("../../../public/assets/story.jpg");
+    
       }
       
       .card:hover .card-side.front1 {
@@ -94,7 +97,14 @@
     .upper-case{
         margin-top: 25px;
     }
-        img{
+       
+    @media screen and (min-width: 1827px) {
+      img{
+          width: 64%;
+         }
+    }
+    
+    img{
             background-color: #000;
     border-radius: 20px;
     width: 100%;
@@ -129,13 +139,19 @@ margin: 20px 20px;
 border-radius: 5px;
 
       }
+      .stripe-main-sec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       .strip-sub{
         width: 100%;
         color: #fff;
         background-color: #000;
         border-radius: 10px;
 
-padding: 20px 5px;
+        font-size: 22px;
+        padding: 30px 5px;
 box-shadow: 0px 10px 15px -5px var(--grayishBlue);
       }
 

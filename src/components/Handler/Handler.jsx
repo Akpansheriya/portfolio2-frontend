@@ -9,14 +9,17 @@ import Benefit from '../Benefits/Benefit'
 import Startup from '../startup/Startup'
 import MobileService from '../mobileServices/MobileService'
 import EngagementModel from '../engagement/EngagementModel'
-import Portfolio from '../Portfolio/Portfolio'
+
 import Testimonials from '../Testimonials/Testimonials'
 import Contact from '../ContactUs/Contact'
 import Footer from '../Footer/Footer'
 import data from "../../data.json"
+import MainPort from '../Portfolio/MainPort'
 
 
-function Handler({ apps, onAppClick}) {
+
+
+function Handler({ apps, onAppClick,webData,handleId}) {
   return (
     <div>
         <Navbars />
@@ -26,11 +29,12 @@ function Handler({ apps, onAppClick}) {
 <AboutUs/>
 <Service/>
 <Benefit/>
-<Startup/>
+
 <MobileService/>
 <EngagementModel/>
-<Portfolio apps={apps} onAppClick={onAppClick} />
+<MainPort apps={apps} onAppClick={onAppClick} webData={webData} handleId={handleId} />
 <Testimonials testimonialData={data}/>
+<Startup/>
 <Contact/>
 <Footer/>
     </div>

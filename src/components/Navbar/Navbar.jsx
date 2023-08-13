@@ -25,12 +25,12 @@ function Navbars() {
       
           <Navbar fixed='top' className={`${show && "back"}`} expand="lg" bg="dark" data-bs-theme="dark">
         <Container>
-         <img src="../assets/blackbulllogo.png" alt='logo'/>
+         <img  referrerpolicy="no-referrer" src="../assets/blackbulllogo.png" alt='logo'/>
           <Nav className="ml-auto">
           <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-            <Nav.Link smooth href="#hero">Home</Nav.Link>
-            <Nav.Link smooth href="#About">About</Nav.Link>
+            <Nav.Link  href="#hero">Home</Nav.Link>
+            <Nav.Link  href="#About">About</Nav.Link>
             <Nav.Link href="#Services">Services</Nav.Link>
             <Nav.Link href="#Career">Career</Nav.Link>
             <Nav.Link href="#Portfolio">Portfolio</Nav.Link>

@@ -7,9 +7,9 @@ function Benefit() {
   return (
     <div className="benefit-main mt-5" id="Career">
        <Helmet>
-        <title>BlackBull Technologies</title>
-        <meta name="description" content="this section show benefits of join BlackBull Technologies" />
-        <meta name="keywords" content="blackbull, blackbuck, black, technologies, blackbull technologies, welcome blackbull, technosoft, infotech, blackbull technosoft, blackbull infotech,benefit,career,vacation,paid leave,blackbull benefits,fayda," />
+        <title>which company providing a various benefits to their employee? - Blackbull Technologies</title>
+        <meta name="description" content="we are providing a various benefits and experience such as paid leave,paid vacation,performance bonus, career growth,employee training and friendly environment to our employee's" />
+        <meta name="keywords" content="various benefits, paid leave, paid vacation career growth, employee training,performance bonus,friendly environment" />
         </Helmet>
       <Row>
         <h1 className="main-heading"> Career</h1>
@@ -27,13 +27,13 @@ function Benefit() {
         <>
         <Col sm={12} lg={4} md={4} className="mt-5">
         <div key={ele.title} className="wrapper"  data-aos="fade-up" data-aos-delay={ele.aos}>
-      <div class="card">
-        <div class="card-img">
-            <img src={ele.image} alt="vac" />
+      <div className="card">
+        <div className="card-img">
+            <img  referrerpolicy="no-referrer" src={ele.image} alt="vac" />
         </div>
-        <div class="card-info">
+        <div className="card-info">
             <p className="card-title">{ele.title}</p>
-          <p class="text-body">
+          <p className="text-body">
             {ele.description}
           </p>
         

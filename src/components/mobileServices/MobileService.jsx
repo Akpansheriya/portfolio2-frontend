@@ -6,9 +6,9 @@ function MobileService() {
   return (
     <div className='mobileService-main mt-5'>
        <Helmet>
-        <title>BlackBull Technologies</title>
-        <meta name="description" content="we are provide a various app and web development services" />
-        <meta name="keywords" content="blackbull, blackbuck, black, technologies, blackbull technologies, welcome blackbull, technosoft, infotech, blackbull technosoft, blackbull infotech,mobile service,ui/ux, responsive design,web development,app development" />
+        <title>whoose to help for develop best mobile apps? - Blackbull Technologies</title>
+        <meta name="description" content="we are provide a various app development sevices like - Native mobile app development,Third party integration,Hybrid mobile app development,Mobile UI/UX development,Mobile app maintenance,Mobile app testing" />
+        <meta name="keywords" content="best mobile apps,help for develop best mobile apps, develop best mobile apps, Native mobile app development,Third party integration,Hybrid mobile app development,Mobile UI/UX development,Mobile app maintenance,Mobile app testing" />
         </Helmet>
          <Row >
         
@@ -19,41 +19,41 @@ function MobileService() {
     
     </Row>
         <Row className='mt-5'>
-            <Col sm={12} md={6} lg={6}> <div class="cards">
-    <div class="card ">
-        <p class="tip">
+            <Col sm={12} md={6} lg={6}> <div className="cards">
+    <div className="card ">
+        <p className="tip">
                         Native mobile app development
                       </p>
        
     </div>
-    <div class="card ">
-        <p class="tip">
+    <div className="card ">
+        <p className="tip">
                       Hybrid mobile app development
                     </p>
        
     </div>
-    <div class="card ">
-        <p class="tip">
+    <div className="card ">
+        <p className="tip">
                       Mobile app maintenance
                     </p>
        
     </div>
 </div></Col>
- <Col sm={12} md={6} lg={6}> <div class="cards">
-    <div class="card ">
-        <p class="tip">
+ <Col sm={12} md={6} lg={6}> <div className="cards">
+    <div className="card ">
+        <p className="tip">
                       Third party integration
                     </p>
        
     </div>
-    <div class="card ">
-        <p class="tip">
+    <div className="card ">
+        <p className="tip">
                       Mobile UI/UX development
                     </p>
        
     </div>
-    <div class="card ">
-        <p class="tip">
+    <div className="card ">
+        <p className="tip">
                       Mobile app testing
                     </p>
        
