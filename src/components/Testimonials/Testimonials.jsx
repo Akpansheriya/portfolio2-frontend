@@ -98,7 +98,7 @@ const TESTIMONIAL_DELAY = 3000;
 <span className={el.class2 ? `${styles.checked} fa fa-star ${styles.fa_star} ` : `fa fa-star ${styles.fa_star} `} ></span>
 <span className={el.class3 ? `${styles.checked} fa fa-star ${styles.fa_star} ` : `fa fa-star ${styles.fa_star} `}></span>
 <span className={el.class4 ? `${styles.checked} fa fa-star ${styles.fa_star} ` : `fa fa-star ${styles.fa_star} `}></span>
-<span className={el.class5 ? `${styles.checked} fa fa-star ${styles.fa_star} ` : `fa fa-star ${styles.fa_star} `}></span>
+<span className={el.class5 === "checked2" ? `${styles.checked} fa-solid fa-star-half-stroke ${styles.fa_star} ` : `${styles.checked} fa fa-star ${styles.fa_star} `}></span>
                 <div className={styles.dots3} ref={refButtonsParentDiv}>
                {testimonialData.map((_, i, arr) => {
                  return (

@@ -135,7 +135,7 @@
       .strip-main{
         background-color: #f18e38;
 padding: 0 5px;
-margin: 20px 20px;
+margin-top: 10px;
 border-radius: 5px;
 
       }
@@ -155,8 +155,31 @@ border-radius: 5px;
 box-shadow: 0px 10px 15px -5px var(--grayishBlue);
       }
 
+
+      @media screen and (min-width: 1200px) and (max-width: 1400px){
+        p{
+          color: #fff;
+          margin-bottom: 0px !important;
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width:900px){
+        p{
+          font-size: 12px !important;
+          color: #fff;
+          margin-bottom: 0px !important;
+        }
+      }
+      @media screen and (min-width: 900px) and (max-width:1043px){
+        p{
+          font-size: 12px !important;
+          color: #fff;
+          margin-bottom: 0px !important;
+        }
+      }
+
       p{
         color: #fff;
+        margin-bottom: 20px;
       }
 
       .counter-main{

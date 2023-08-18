@@ -17,6 +17,7 @@ import webData from "./web.json"
 import Condition from "./components/Term-condition/Condition";
 import Privacy from "./components/privacy-policy/Privacy";
 import WebView from "./components/Portfolio/WebView";
+import Package from "./components/packages/Package";
 
 function App() {
   const [load, setLoaded] = useState(false);
@@ -67,6 +68,7 @@ function App() {
             />
             <Route  path="/TermConditions" element={<Condition />} />
             <Route  path="/PrivacyPolicy" element={<Privacy />} />
+            <Route  path="/works" element={<Package />} />
           </Routes>
          
         </>

@@ -1,9 +1,10 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import { Modal, Button } from "react-bootstrap";
 import { ToastContainer, Zoom, toast } from "react-toastify";
 import Thanks from "../ThankYou/Thanks";
 function Model({ show, handleClose }) {
+  const fileInputRef = useRef();
   const [loading,setLoading] = useState()
   const [file, setFile] = useState({
     firstName: "",
@@ -23,13 +24,14 @@ function Model({ show, handleClose }) {
     });
   };
 
-  const submit = (e) => {
+  const submit = async (e) => {
     e.preventDefault();
     setLoading(true)
     let formData = new FormData();
 
  
-    formData.append("resume", e.target.file.files[0]);
+    formData.append("resume", fileInputRef.current.files[0]);
+
     formData.append("firstName", file.firstName);
     formData.append("lastName", file.lastName);
     formData.append("phone", file.phone);
@@ -41,8 +43,8 @@ function Model({ show, handleClose }) {
     formData.append("education", file.education);
     formData.append("detail", file.detail);
    
-    axios
-      .post("https://portfolio2-02cw.onrender.com/upload", formData)
+  await axios
+      .post("http://13.234.59.45:8000/upload", formData)
       .then((res) => {
         setLoading(false)
         if(res.data){
@@ -69,7 +71,21 @@ function Model({ show, handleClose }) {
           });
         }
       })
-      .catch((err) => console.log(err));
+      .catch((err) => 
+      {
+        setLoading(false)
+        toast(err.message, {
+          position: "top-center",
+  autoClose: 3000,
+  hideProgressBar: false,
+  closeOnClick: true,
+  pauseOnHover: true,
+  draggable: true,
+  progress: undefined,
+  theme: "light",
+        })
+      }
+      );
   };
 
   return (
@@ -255,7 +271,8 @@ function Model({ show, handleClose }) {
                         required
                         oninvalid="this.setCustomValidity('upload your resume')"
                         id="file"
-                        autocomplete="off"
+                      
+                        ref={fileInputRef}
                         type="file"
                         className="form-control  new-form"
                         name="resume"

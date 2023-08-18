@@ -9,7 +9,9 @@ a {
   a:hover {
     text-decoration: none !important;
   }
-  
+  .display{
+    text-align: start;
+  }
   .footer-logo-img {
    
     width: 50%;
@@ -26,12 +28,7 @@ a {
     margin-bottom: 0px !important;
     font-weight: 700;
   }
-  .footer-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+ 
   .footer-20192 {
     border: 5px solid #f18e38 ;
     position: relative;
@@ -124,4 +121,23 @@ a {
   }
 small {
     color: #fff;
+}
+.small-view{
+  display: contents;
+}
+@media only screen and (max-width: 600px) {
+ .small-view{
+  display: flex;
+  justify-content:space-around ;
+  align-items: center;
+  margin-top: 30px;
+ }
+ .footer-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .texty{
+ text-align: center !important;
+ }
 }

@@ -36,7 +36,7 @@ const [loading, setLoading] = useState()
       message:data.message
     }
 
-    axios.post("https://portfolio2-02cw.onrender.com/contactUs",user).then((res) => {
+    axios.post("http://13.234.59.45:8000/contactUs",user).then((res) => {
       setLoading(false)
      if(res.data){
     
@@ -58,6 +58,18 @@ theme: "light",
         message: "",
       })
      }
+    }).catch((err) => {
+      setLoading()
+      toast(err.message , {
+        position: "top-right",
+autoClose: 3000,
+hideProgressBar: false,
+closeOnClick: true,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "light",
+      })
     })
   }
 

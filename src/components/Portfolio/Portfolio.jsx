@@ -10,7 +10,7 @@ import Skeleton from "../body/Skeleton";
 function Portfolio({ apps, onAppClick,appId,webData,handleId}) {
   
   return (
-    <div className="portfolio-main mt-5" id="Portfolio">
+    <div className="portfolio-main mt-5" >
       <Helmet>
         <title>we are build a various products for our clients - Blackbull Technologies</title>
         <meta
@@ -27,6 +27,8 @@ function Portfolio({ apps, onAppClick,appId,webData,handleId}) {
 appId === "web"  && (
   <>
    <Carousel
+   enableAutoPlay 
+   autoPlaySpeed={2000}
         className="mt-5"
         itemsToShow={1}
         easing="cubic-bezier(1,.15,.55,1.54)"
@@ -68,6 +70,8 @@ appId === "web"  && (
   appId === "apps" && (
     <>
     <Carousel
+    enableAutoPlay 
+    autoPlaySpeed={2000}
         className="mt-5"
         itemsToShow={1}
         easing="cubic-bezier(1,.15,.55,1.54)"

@@ -6,7 +6,51 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 25px;
-
+  @media only screen and (max-width: 600px) {
+    .rec-arrow{
+     visibility: hidden;
+     min-width: 0px;
+     width: 0px;
+    }
+    .rec-slider-container{
+      margin: 0;
+    }
+   }
+   @media screen and (min-width: 768px) and (max-width: 900px) {
+    .description {
+      p {
+        font-size: 12px !important;
+      }
+    }
+  }
+  @media screen and (min-width: 901px) and (max-width: 1200px) {
+    .description {
+      p {
+        font-size: 16px !important;
+      }
+    }
+  }
+  @media screen and (min-width: 1201px) and (max-width: 1500px) {
+    .description {
+      p {
+        font-size: 18px !important;
+      }
+    }
+  }
+  @media screen and (min-width: 1501px) and (max-width: 1800px) {
+    .description {
+      p {
+        font-size: 22px !important;
+      }
+    }
+  }
+  @media screen and (min-width: 1801px) and (max-width: 2100px) {
+    .description {
+      p {
+        font-size: 26px !important;
+      }
+    }
+  }
   .description {
     font-family: "Roboto";
     margin-top: 30px;

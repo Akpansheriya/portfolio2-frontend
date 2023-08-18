@@ -84,7 +84,7 @@ function Startup() {
         </Helmet>
       <Row>
         <h1 className="main-heading" id="StartUp">Current Openings</h1>
-        <h2 className="sub-heading">we are providing a various technologies options to beginners </h2>
+        <h2 className="sub-heading">we are providing a various technologies options</h2>
       </Row>
 
       <Carousel

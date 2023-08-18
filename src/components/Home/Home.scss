@@ -16,10 +16,32 @@ background-position: center;
     top: -150px;
 }
 
+@media (max-width:768px) {
+  .hero{
+    .Typewriter{
+     
+     height: 100px !important;
+      font-size: 40px !important;
+     
+    }
+  }
+
+}
+
 .hero {
     width: 100%;
     position: relative;
     background: var(--color-primary);
+   
+    .Typewriter{
+     
+      position: relative;
+      top: -400px;
+     
+      font-size: 70px;
+      font-weight: 300;
+      color: #fff;
+    }
   
   }
   
@@ -73,6 +95,7 @@ background-position: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  
   .hero .icon-box {
     padding: 30px 15px;
     position: relative;

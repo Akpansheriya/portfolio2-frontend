@@ -33,7 +33,7 @@ function Header() {
               <h2>WE WILL HELP YOU TO</h2>
               <h2>GROW YOUR BUSINESS</h2>
               <p>we are the team of <span className="bold-style">professional
-                developer</span></p>
+                developers</span></p>
                 </div>
                 </Col>
                 

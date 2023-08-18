@@ -17,9 +17,9 @@ const handleAppClick = () => {
   };
 
   return (
-    <div className='portfolio-section-main'>
+    <div className='portfolio-section-main' id="Portfolio">
       <Row>
-        <h1 className="main-heading">OurPortfolio</h1>
+        <h1 className="main-heading">Our Portfolio</h1>
         <h2 className="sub-heading">we are build a various products for our clients</h2>
       </Row>
          <div className='main-btn'>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.scss";
 import { Helmet } from "react-helmet";
-
+import Typewriter from "typewriter-effect"
 
 function Home() {
   return (
@@ -13,7 +13,13 @@ function Home() {
         </Helmet>
         <div id="hero" className="hero">
           <div className="header-img"></div> 
-          <h1 className="welcom-text">Welcome To BlackBull Technologies</h1>
+          <Typewriter
+  options={{
+    strings: ['Welcome To <span style="color:#f18e38;  font-weight: 700; ">BlackBull Technologies </span>', 'Visit Our Full <span style="color:#f18e38;  font-weight: 700; ">Website</span>', 'Have A <span style="color:#f18e38;  font-weight: 700; ">Nice Day</span>'],
+    autoStart: true,
+    loop: true,
+  }}
+/>
 
           <div className="icon-boxes position-relative">
             <div className="box-pos container position-relative">

@@ -44,3 +44,15 @@ code {
     line-height: 2;
     color: #ffffff;
 }
+
+@media only screen and (max-width: 600px) {
+  .sub-heading{
+    font-family: "Roboto";
+    font-size: 2rem;
+      font-family: "poppins";
+      font-weight: 300;
+      color: #ffffff;
+      letter-spacing: 2px;
+    line-height: 1;
+  }
+}
