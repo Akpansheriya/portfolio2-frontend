@@ -33,7 +33,7 @@ function PackageModal({show,handleClose}) {
       message:data.message
     }
 
-    axios.post("http://13.234.59.45:8000/works",user).then((res) => {
+    axios.post("http://3.108.143.134:8000/works",user).then((res) => {
       setLoading(false)
      if(res.data){
         handleClose();
@@ -81,7 +81,7 @@ theme: "light",
           Name
         </Form.Label>
         <Col sm="9">
-          <Form.Control value={data.name} onChange={handleChange} name="name" type="text" placeholder="Enter Your Name" />
+          <Form.Control value={data.name} onChange={handleChange} name="name" type="text" placeholder="Enter Your Name" required />
         </Col>
       </Form.Group>
 
@@ -90,7 +90,7 @@ theme: "light",
           Email
         </Form.Label>
         <Col sm="9">
-          <Form.Control value={data.email} onChange={handleChange} name="email" type="email" placeholder="Enter Your Email" />
+          <Form.Control value={data.email} onChange={handleChange} name="email" type="email" placeholder="Enter Your Email" required />
         </Col>
       </Form.Group>
       <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
@@ -98,18 +98,18 @@ theme: "light",
           Technologies
         </Form.Label>
         <Col sm="9">
-          <Form.Control value={data.technologies} name="technologies" onChange={handleChange} type="text" placeholder="Enter Technologies " />
+          <Form.Control value={data.technologies} name="technologies" onChange={handleChange} type="text" placeholder="Enter Technologies " required />
         </Col>
       </Form.Group>
       <Form.Group as={Row} className="mb-3" controlId="exampleForm.ControlTextarea1">
         <Form.Label column sm="3">Message</Form.Label>
         <Col sm="9">
         
-        <Form.Control value={data.message} name="message" onChange={handleChange} as="textarea" rows={3} />
+        <Form.Control value={data.message} name="message" onChange={handleChange} as="textarea" rows={3} required />
         </Col>
       </Form.Group>
       <div style={{ display: 'flex', width: '100%', justifyContent: 'center', alignItems: 'center' }}>
-      <Button style={{fontSize:"20px", fontWeight:"700"}} type='submit'>{loading ? "Wait..." : "Submit"} </Button>
+      <Button target="_blank" rel="noopener noreferrer" style={{fontSize:"20px", fontWeight:"700"}} type='submit'>{loading ? "Wait..." : "Submit"} </Button>
       </div>
      
     </Form>

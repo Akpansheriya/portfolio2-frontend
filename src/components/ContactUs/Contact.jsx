@@ -36,7 +36,7 @@ const [loading, setLoading] = useState()
       message:data.message
     }
 
-    axios.post("http://13.234.59.45:8000/contactUs",user).then((res) => {
+    axios.post("http://3.108.143.134:8000/contactUs",user).then((res) => {
       setLoading(false)
      if(res.data){
     
@@ -119,7 +119,7 @@ theme: "light",
               <div className="info-box  mb-4">
                 <i className="fa-solid fa-phone"></i>
                 <h3>Call Us</h3>
-                <a href="tel:+91 8000698357"><p>+91 8000698357</p></a>
+                <a href="tel:+91 8000698357" ><p>+91 8000698357</p></a>
                 {/* <a href="tel:+91 9978671070"> <p>+91 9978671070</p></a> */}
               </div>
             </div>
@@ -210,7 +210,7 @@ theme: "light",
                 </div>
               
                 <div className="text-center">
-                 <button type="submit"> { loading ? "Loading..." : "Send Message "}</button>
+                 <button type="submit" target="_blank" rel="noopener noreferrer"> { loading ? "Loading..." : "Send Message "}</button>
                 
                 </div>
               </Form>

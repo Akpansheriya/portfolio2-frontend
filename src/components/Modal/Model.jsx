@@ -44,7 +44,7 @@ function Model({ show, handleClose }) {
     formData.append("detail", file.detail);
    
   await axios
-      .post("http://13.234.59.45:8000/upload", formData)
+      .post("http://3.108.143.134:8000/upload", formData)
       .then((res) => {
         setLoading(false)
         if(res.data){
@@ -295,7 +295,7 @@ function Model({ show, handleClose }) {
                       ></textarea>
                     </div>
                     <div className="col-md-12 mb-4" style={{textAlign:"center"}}> 
-                    <Button size="lg" variant="secondary" type="submit" >
+                    <Button size="lg" variant="secondary" type="submit" target="_blank" rel="noopener noreferrer">
                   {loading ? "Loading..." : "submit"}
             
           </Button>
