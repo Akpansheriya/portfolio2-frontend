@@ -51,7 +51,7 @@ function Footer() {
                 </div>
 
                 <p className="copyright">
-                  <small>&copy; 2019</small>
+                  <small>&copy; 2021</small>
                 </p>
               </div>
               <div className="small-view">
@@ -59,7 +59,7 @@ function Footer() {
                 <h3>Useful links</h3>
                 <ul className="list-unstyled links">
                   <li>
-                    <a href="#hero">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
                     <a href="#About">About us</a>
@@ -114,11 +114,11 @@ function Footer() {
               <div className="col-md-3 display">
                 <h3>Follow us</h3>
                 <ul className="list-unstyled social">
-                  <li>
+                  {/* <li>
                     <a href="https://www.facebook.com/profile.php?id=100094538292148&is_tour_dismissed=true">
                       <i className="fa-brands fa-facebook"></i>
                     </a>
-                  </li>
+                  </li> */}
 
                   <li>
                     <a href="https://www.linkedin.com/company/blackbull-technologies/">

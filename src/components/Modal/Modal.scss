@@ -1,0 +1,50 @@
+
+   .modal-header{
+    color: #f18e38;
+    background: #111215;
+    border-radius: 0 !important;
+    .btn-close{
+        color:#f18e38 !important ;
+       }
+       
+   } 
+   
+   .modal-body{
+    background: #f18e38;
+    .modal-content{
+        border: 2px solid #000;
+        border-radius: 0 !important;
+    }
+   }
+   
+   
+.modal { form{
+    .form-p{
+        font-weight: 700;
+    }
+    label{
+        font-weight: 700 !important;
+    }
+    input{
+        border: 1px solid #000 !important;
+    }
+    select{
+        border: 1px solid #000 !important;
+    }
+    textarea{
+        border: 1px solid #000 !important;
+    }
+    a{
+        border: 2px solid #fff !important;
+        background: #000 !important;
+        color: #fff !important;
+        &:hover{
+            color: #000 !important;
+            border: 2px solid #000 !important;
+            background: #fff !important;
+            transition: all ease 0.4s;
+        }
+    }
+}
+   }
+   

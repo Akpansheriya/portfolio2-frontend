@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState,useRef } from "react";
+import "./Modal.scss"
 import { Modal, Button } from "react-bootstrap";
 import { ToastContainer, Zoom, toast } from "react-toastify";
 import Thanks from "../ThankYou/Thanks";
@@ -42,39 +43,25 @@ function Model({ show, handleClose }) {
     formData.append("experienceMonth", e.target.experienceMonth.value);
     formData.append("education", file.education);
     formData.append("detail", file.detail);
-   
-  await axios
-      .post("http://3.108.143.134:8000/upload", formData)
-      .then((res) => {
-        setLoading(false)
-        if(res.data){
-          handleClose();
-          toast(<Thanks/> , {
-            position: "top-center",
-    autoClose: 3000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "light",
-          });
-
-          setFile({
-            firstName: "",
-            lastName: "",
-            phone: "",
-            email: "",
-            detail: "",
-            profile: "",
-            education: "",
-          });
-        }
-      })
-      .catch((err) => 
-      {
-        setLoading(false)
-        toast(err.message, {
+  if(file.phone.length !== 10){
+    toast.error("Invalid Phone Number" , {
+      position: "top-right",
+autoClose: 3000,
+hideProgressBar: false,
+closeOnClick: true,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "light",
+    });
+  }else{
+    await axios
+    .post("https://blackbulltechnologies.in/api/upload", formData)
+    .then((res) => {
+      setLoading(false)
+      if(res.data){
+        handleClose();
+        toast(<Thanks/> , {
           position: "top-center",
   autoClose: 3000,
   hideProgressBar: false,
@@ -83,14 +70,41 @@ function Model({ show, handleClose }) {
   draggable: true,
   progress: undefined,
   theme: "light",
-        })
+        });
+
+        setFile({
+          firstName: "",
+          lastName: "",
+          phone: "",
+          email: "",
+          detail: "",
+          profile: "",
+          education: "",
+        });
       }
-      );
+    })
+    .catch((err) => 
+    {
+      setLoading(false)
+      toast.error(err.message, {
+        position: "top-right",
+autoClose: 3000,
+hideProgressBar: false,
+closeOnClick: true,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "light",
+      })
+    }
+    );
+  }
+ 
   };
 
   return (
-    <div>
-      <Modal size="lg" show={show} onHide={handleClose}>
+    <div className="modal-main">
+      <Modal size="lg" show={show} onHide={handleClose} className="modal-back">
         <Modal.Header closeButton>
           <Modal.Title> Apply Now</Modal.Title>
         </Modal.Header>
@@ -295,7 +309,7 @@ function Model({ show, handleClose }) {
                       ></textarea>
                     </div>
                     <div className="col-md-12 mb-4" style={{textAlign:"center"}}> 
-                    <Button size="lg" variant="secondary" type="submit" target="_blank" rel="noopener noreferrer">
+                    <Button className="sub-btn" size="lg" variant="secondary" type="submit" >
                   {loading ? "Loading..." : "submit"}
             
           </Button>

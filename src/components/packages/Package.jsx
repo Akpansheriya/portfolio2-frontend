@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./package.scss";
 import { Button, Col, Row } from "react-bootstrap";
-import Footer from "../Footer/Footer";
+
 import PackageModal from "./PackageModal";
+import { Link } from "react-router-dom";
 function Package() {
   const [open,setOpen] = useState(false)
   const handleOpen = () => setOpen(true)
@@ -10,6 +11,7 @@ function Package() {
   return (
     <>
       <div className="discuss-btn">
+        <Link to="/" >Go Back</Link>
         <Button onClick={handleOpen}>Let's Discuss With Us -></Button>
       </div>
       <Row className="head-class">
@@ -92,7 +94,7 @@ function Package() {
             <div className="main-text">
               <p>
                 {" "}
-                <span> =></span> <span>Blackbull Technologies</span> is a
+                <span> => </span> <span>Blackbull Technologies</span> is a
                 leading tech firm adept in harnessing the power of various web
                 technologies. Node.js, a server-side JavaScript runtime,
                 empowers them to create scalable and efficient web applications.
@@ -189,7 +191,7 @@ function Package() {
         </div>
         <PackageModal show={open} handleClose={handleClose} />
       </div>
-      <Footer />
+    
     </>
   );
 }

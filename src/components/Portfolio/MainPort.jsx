@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 function MainPort({apps,onAppClick,webData,handleId}) {
     const [appId,setAppId] = useState("apps")
-console.log("appId",appId)
+
 const handleAppClick = () => {
     setAppId('apps');
   };

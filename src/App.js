@@ -38,7 +38,7 @@ function App() {
     setLoaded(true);
     setTimeout(() => {
       setLoaded(false);
-    }, 4000);
+    }, 3000);
   }, []);
 
   useEffect(() => {

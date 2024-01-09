@@ -37,7 +37,7 @@ function Home() {
                     <p>
                       Searching skills is very important for make a creative
                       contents for websites and applications it increases our
-                      creativity and abilities
+                      creativity and abilities.
                     </p>
                   </div>
                 </div>
@@ -54,8 +54,8 @@ function Home() {
                     <h4 className="title">Announcement</h4>
                     <p>
                       We are hiring a experienced developers for
-                      Flutter,Reactjs,Nodejs,Angular, <br />
-                      Laravel,React Native,Word Press,PHP.{" "}
+                      Flutter , Reactjs , Nodejs , Angular ,
+                      Laravel , React Native , Word Press ,PHP.{" "}
                     </p>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ function Home() {
                       Management is a very important factor for web and app
                       development beacause without management we can't complete
                       any task or project at a time. we are manage any critical
-                      condition for our client's project
+                      condition for our client's project.
                     </p>
                   </div>
                 </div>

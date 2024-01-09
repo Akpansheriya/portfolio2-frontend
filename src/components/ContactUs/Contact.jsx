@@ -32,16 +32,13 @@ const [loading, setLoading] = useState()
       name:data.name,
       email:data.email,
       subject:data.subject,
-      phone:data.phone,
+      phone:data.phone.length === 10 ? data.phone : "invalid number",
       message:data.message
     }
-
-    axios.post("http://3.108.143.134:8000/contactUs",user).then((res) => {
-      setLoading(false)
-     if(res.data){
-    
-      toast(<Thanks/> , {
-        position: "top-center",
+if(data.phone.length !== 10) {
+  setLoading(false)
+  toast.error("Phone Number Not Valid" , {
+    position: "top-right",
 autoClose: 3000,
 hideProgressBar: false,
 closeOnClick: true,
@@ -49,19 +46,15 @@ pauseOnHover: true,
 draggable: true,
 progress: undefined,
 theme: "light",
-      })
-      setData({
-        name: "",
-        email: "",
-        subject: "",
-        phone: "",
-        message: "",
-      })
-     }
-    }).catch((err) => {
-      setLoading()
-      toast(err.message , {
-        position: "top-right",
+  })
+}else{
+  axios.post("https://blackbulltechnologies.in/api/contactUs",user).then((res) => {
+    console.log("res",res)
+    setLoading(false)
+   if(res.data){
+  
+    toast(<Thanks/> , {
+      position: "top-center",
 autoClose: 3000,
 hideProgressBar: false,
 closeOnClick: true,
@@ -69,8 +62,30 @@ pauseOnHover: true,
 draggable: true,
 progress: undefined,
 theme: "light",
-      })
     })
+    setData({
+      name: "",
+      email: "",
+      subject: "",
+      phone: "",
+      message: "",
+    })
+   }
+  }).catch((err) => {
+    setLoading()
+    toast.error(err.message , {
+      position: "top-right",
+autoClose: 3000,
+hideProgressBar: false,
+closeOnClick: true,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "light",
+    })
+  })
+}
+    
   }
 
   return (
@@ -108,7 +123,7 @@ theme: "light",
               <div className="info-box  mb-4">
               <a  href="mailto:blackbulltechnology@gmail.com"> <i className="fa-solid fa-envelope"></i></a>
                 <h3>Email Us</h3>
-                <p>blackbulltechnology@gmail.com</p>
+                <p>contact@blackbulltechnologies.in</p>
               </div>
             </div>
 

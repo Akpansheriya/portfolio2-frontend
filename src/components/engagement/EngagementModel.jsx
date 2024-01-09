@@ -13,7 +13,7 @@ function EngagementModel() {
         </Helmet>
       <Row>
         <h1 className="main-heading">Our Engagement Model</h1>
-        <h2 className="sub-heading">we are providing a best strategic ideas ,teams ,instructions and methods for build your products </h2>
+        <h2 className="sub-heading">we are providing a best strategic ideas, teams, instructions and methods for build your products </h2>
       </Row>
 
       <Row>

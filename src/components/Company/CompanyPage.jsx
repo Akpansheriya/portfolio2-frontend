@@ -69,7 +69,7 @@ function CompanyPage() {
       <div className="company-main" id='Company'>
         <Row >
         
-            <h1 className="main-heading"> Welcome To Our mission,story and goals </h1>
+            <h1 className="main-heading"> Welcome To Our mission, story and goals </h1>
             <h2 className="sub-heading"> we are one of the best strategic and successfull it solution company </h2>
         
         </Row>

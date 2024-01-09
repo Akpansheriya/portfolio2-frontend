@@ -72,7 +72,7 @@ const TESTIMONIAL_DELAY = 3000;
         </Helmet>
          <Row>
         <h1 className="main-heading">Our Testimonials</h1>
-        <h2 className="sub-heading"> grow your business with us </h2>
+        <h2 className="sub-heading">We are an emerging mobile app development company delivery dream app solutions to clients in India, USA, UK, Australia, New Zealand and other countries as well. We don’t, our hard work speaks for itself. See what our clients say about us </h2>
       </Row>
         
       <div className={`${styles["section-three-main-div"]} testimonial`} data-aos="zoom-in"  data-aos-duration="3000"> 
@@ -90,16 +90,20 @@ const TESTIMONIAL_DELAY = 3000;
                 key={i}
                 className={`feedbackText--${i} ${styles["main-quotes-div"]} ${styles["not-visible"]}`}
               >
-                <img  referrerpolicy="no-referrer" className={styles.img_main} src={el.photo} alt={el.author}/>
+                <div className={styles.img_container}>
+                <img  referrerpolicy="no-referrer" className={el.class === "rus_img" ? `${styles.rus_img}` : `${styles.img_main}` } src={el.photo} alt={el.author}/>
+                </div>
+               
                 <div className={styles.para}>{el.testimonial}</div>
                 <div className={styles.subText}>{el.author}</div>
                 <h5 className={styles.rating}>Rating</h5>
+                <div className={styles.main_rating}>
 <span className={el.class1 ? `${styles.checked} fa fa-star ${styles.fa_star} ` : `fa fa-star ${styles.fa_star} `}></span>
 <span className={el.class2 ? `${styles.checked} fa fa-star ${styles.fa_star} ` : `fa fa-star ${styles.fa_star} `} ></span>
 <span className={el.class3 ? `${styles.checked} fa fa-star ${styles.fa_star} ` : `fa fa-star ${styles.fa_star} `}></span>
 <span className={el.class4 ? `${styles.checked} fa fa-star ${styles.fa_star} ` : `fa fa-star ${styles.fa_star} `}></span>
 <span className={el.class5 === "checked2" ? `${styles.checked} fa-solid fa-star-half-stroke ${styles.fa_star} ` : `${styles.checked} fa fa-star ${styles.fa_star} `}></span>
-                <div className={styles.dots3} ref={refButtonsParentDiv}>
+</div> <div className={styles.dots3} ref={refButtonsParentDiv}>
                {testimonialData.map((_, i, arr) => {
                  return (
                    <div

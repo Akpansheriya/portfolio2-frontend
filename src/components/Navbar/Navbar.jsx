@@ -34,11 +34,12 @@ function Navbars() {
         expanded={expanded}
       >
         <Container>
+          <a href="/">
           <img
             referrerpolicy="no-referrer"
             src="../assets/blackbulllogo.png"
             alt="logo"
-          />
+          /></a>
           <Navbar.Toggle aria-controls="navbarScroll" onClick={() => setExpanded(!expanded)} />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="ml-auto">

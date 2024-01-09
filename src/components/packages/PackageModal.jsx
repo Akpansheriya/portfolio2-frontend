@@ -33,7 +33,7 @@ function PackageModal({show,handleClose}) {
       message:data.message
     }
 
-    axios.post("http://3.108.143.134:8000/works",user).then((res) => {
+    axios.post("https://blackbulltechnologies.in/api/works",user).then((res) => {
       setLoading(false)
      if(res.data){
         handleClose();
@@ -56,7 +56,7 @@ theme: "light",
      }
     }).catch((err) => {
       setLoading(false)
-      toast(err.message , {
+      toast.error(err.message , {
         position: "top-right",
 autoClose: 3000,
 hideProgressBar: false,
@@ -109,7 +109,7 @@ theme: "light",
         </Col>
       </Form.Group>
       <div style={{ display: 'flex', width: '100%', justifyContent: 'center', alignItems: 'center' }}>
-      <Button target="_blank" rel="noopener noreferrer" style={{fontSize:"20px", fontWeight:"700"}} type='submit'>{loading ? "Wait..." : "Submit"} </Button>
+      <Button className='sub-btn' style={{fontSize:"20px", fontWeight:"700"}} type='submit'>{loading ? "Wait..." : "Submit"} </Button>
       </div>
      
     </Form>

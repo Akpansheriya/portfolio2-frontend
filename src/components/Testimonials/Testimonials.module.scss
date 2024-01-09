@@ -1,132 +1,154 @@
-
-.test_main{
-    padding: 25px;
-    margin-top: 50px;
-  
+.test_main {
+  padding: 25px;
+  margin-top: 50px;
 }
-.fa_star{
+.fa_star {
   font-size: 22px;
 }
 .checked {
   color: orange;
 }
-.rating{
+.main_rating{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating {
   color: #fff;
   margin-top: 20px;
   margin-bottom: 15px;
 }
 .section-three-main-div {
-    display: grid;
-    grid-template-rows: 1fr 50px;
-    justify-items: center;
-    row-gap: 1rem;
- height: 100%;
-    // height: 400px;
-    width: 100%;
-   
-   
-  }
-.dots3{
+  display: grid;
+  grid-template-rows: 1fr 50px;
+  justify-items: center;
+  row-gap: 1rem;
+  height: 100%;
+  // height: 400px;
+  width: 100%;
+}
+.dots3 {
   margin-top: 10px;
 }
+.img_container {
+  width: 300px;
+  background: #fff;
+  height: 250px;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.rus_img {
+  width: 295px !important;
+  height: 245px !important;
+  border-radius: 40px;
+}
+.main-quotes-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.img_main {
+  width: 100%;
+ 
+}
+.quotes-img-right {
+  justify-self: end;
+  background-image: url(../../../public/assets/leftquote.png);
+  margin-right: 20px;
+  display: none;
+}
 
-  .img_main{
-    width: 300px;
-    margin-bottom: 30px;
-   
-    border-radius: 25%;
-    border:5px solid #fff;
-  }
-  .quotes-img-right {
-    justify-self: end;
-    background-image: url(../../../public/assets/leftquote.png);
-    margin-right: 20px;
-    display: none;
-  }
-  
-  .quotes-img-left {
-    background-image: url(../../../public/assets/rightquote.png);
-    margin-left: 20px;
-    display: none;
-  }
-  
+.quotes-img-left {
+  background-image: url(../../../public/assets/rightquote.png);
+  margin-left: 20px;
+  display: none;
+}
+
+.section-three-sub-div-one {
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.main-quotes-div {
+  /* width: 1110px; */
+  transition: 1s;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.quotes-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 23px;
+}
+
+/* ------------------ */
+.para {
+  font-family: "Roboto";
+  font-size: 18px;
+  color: #fff;
+  text-align: justify;
+  word-break: break-word;
+  word-wrap: break-word;
+  width: 400px;
+  margin-top: 20px;
+}
+
+.subText {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Roboto";
+}
+
+.myDot {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  padding: 5.5px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 5px;
+  background: rgb(130, 126, 119);
+}
+
+.myDot--active {
+  background: rgb(24, 24, 21);
+}
+
+.not-visible {
+  opacity: 0;
+  transition: 1s;
+}
+
+@media (max-width: 767px) {
   .section-three-sub-div-one {
-    display: grid;
-    grid-template-columns: 10% 1fr 10%;
-    justify-content: center;
-    text-align: center;
-    margin-top: 2rem;
+    grid-template-columns: 15% 1fr 15%;
   }
-  
-  .main-quotes-div {
-    /* width: 1110px; */
-    transition: 1s;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-  }
-  
-  .quotes-img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 25px;
-    height: 23px;
-  }
-  
-  /* ------------------ */
-  .para {
-    font-family: "Roboto";
-    font-size: 18px;
-    color: #fff;
-  }
-  
-  .subText {
-    margin-top: 1rem;
-    font-size: 14px;
-    color: #fff;
-    font-family: "Roboto";
-  }
-  
-  .myDot {
-    display: inline-block;
-    cursor: pointer;
-    border: none;
-    padding: 5.5px;
-    border-radius: 50%;
-    margin-right: 5px;
-    margin-left: 5px;
-    background: rgb(130, 126, 119);
-  }
-  
-  .myDot--active {
-    background: rgb(24, 24, 21);
-  }
-  
-  .not-visible {
-    opacity: 0;
-    transition: 1s;
-  }
-  
-  @media (max-width: 767px) {
-  
-    .section-three-sub-div-one {
-      grid-template-columns: 15% 1fr 15%;
-    }
-  }
+}
 
-  @media (max-width: 480px) {
-  
-    .img_main{
-        width: 100%;
-        margin-bottom: 30px;
-        height: 35%;
-        border-radius: 25%;
-      }
-      .test_main{
-margin-bottom:auto;
-      }
-      .testimonial{
-        height: 100%;
-        width: 100%;
-      }
+@media (max-width: 480px) {
+  .img_main {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 35%;
+    border-radius: 25%;
   }
+  .test_main {
+    margin-bottom: auto;
+  }
+  .testimonial {
+    height: 100%;
+    width: 100%;
+  }
+}
